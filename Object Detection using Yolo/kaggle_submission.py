@@ -2,7 +2,6 @@ import os
 import csv
 import numpy as np
 
-
 def write_csv(file_path, y_list):
     solution_rows = [("id", "expected")] + [(i, y) for (i, y) in enumerate(y_list)]
     with open(file_path, "w") as f:
